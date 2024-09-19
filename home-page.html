@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./Style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="flex justify-center mt-10">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-3">
+                    <div class="hero bg-base-200 min-h-screen">
+                        <div class="hero-content flex-col ">
+                            <div class="stats shadow">
+                                <div class="stat">
+                                    <div class="stat-title">Total Balance</div>
+                                    <div id="total-balance" class="stat-value">360</div>
+                                </div>
+                            </div>
+                            <div><button id="btn-cash-in" class="btn btn-primary mx-2">Cash in</button>
+                                <button id="btn-cash-out" class="btn btn-secondary mx-2">Cash out</button>
+                            </div>
+                            <!-- home page  -->
+                            <div id="home" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Amount</span>
+                                        </label>
+                                        <input id="add-amount" type="text" placeholder="Enter Amount"
+                                            class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">4 Digit PIN</span>
+                                        </label>
+                                        <input id="pin-number" type="password" placeholder="Enter PIN"
+                                            class="input input-bordered" required />
+
+                                    </div>
+                                    <div class="form-control mt-6">
+                                        <button disabled id="login-btn" class="btn btn-primary">Login</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Cash in  -->
+                            <div id="cash-in" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
+                                <h1></h1>
+                                <form class="card-body">
+                                    <h1 class="text-center">Enter cash in amount and PIN</h1>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Amount</span>
+                                        </label>
+                                        <input id="add-amount-cash-in" type="text" placeholder="Enter Amount"
+                                            class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">4 Digit PIN</span>
+                                        </label>
+                                        <input id="pin-number-1" type="password" placeholder="Enter PIN"
+                                            class="input input-bordered" required />
+
+                                    </div>
+                                    <div class="form-control mt-6">
+                                        <button disabled id="login-btn-cash-in" class="btn btn-primary">Cash in</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Cash out -->
+                            <div id="cash-out" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
+                                <form class="card-body">
+                                    <h1 class="text-center">Enter cash out amount and PIN</h1>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Amount</span>
+                                        </label>
+                                        <input id="add-amount-cash-out" type="text" placeholder="Enter Amount"
+                                            class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">4 Digit PIN</span>
+                                        </label>
+                                        <input id="pin-number-2" type="password" placeholder="Enter PIN"
+                                            class="input input-bordered" required />
+
+                                    </div>
+                                    <div class="form-control mt-6">
+                                        <button disabled id="login-btn-cash-out" class="btn btn-secondary">Cash
+                                            out</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./JS/home-page.js"></script>
+</body>
+
+</html>
