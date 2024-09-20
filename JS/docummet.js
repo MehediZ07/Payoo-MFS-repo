@@ -9,7 +9,7 @@ if( inputNumber === "01816312962" && pinNumber ==="1234"){
     window.location.href='../home-page.html';
 }
 else{
-    console.log('Number or pin wrong')
+    console.log('Number and PIN not matched')
 }
 })
 
