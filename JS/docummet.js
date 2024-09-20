@@ -7,7 +7,9 @@ document.getElementById('login-btn').addEventListener('click',function(event){
 if( inputNumber === "01816312962" && pinNumber ==="1234"){
     
     // window.location.href='../home-page.html';
-    window.location.assign('../Sub-pages/home-page.html');
+    // window.location.assign('../Sub-pages/home-page.html');
+    window.location.assign('/your-repo-name/Sub-pages/home-page.html');
+
 
 
 
