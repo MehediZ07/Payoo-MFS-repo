@@ -7,7 +7,7 @@ document.getElementById('login-btn').addEventListener('click',function(event){
 if( inputNumber === "01816312962" && pinNumber ==="1234"){
     
     // window.location.href='../home-page.html';
-    window.location.assign('../home-page.html');
+    window.location.assign('../Payoo-MFS-repo/home-page.html');
 
 
 
