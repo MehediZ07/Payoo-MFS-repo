@@ -6,7 +6,11 @@ document.getElementById('login-btn').addEventListener('click',function(event){
 
 if( inputNumber === "01816312962" && pinNumber ==="1234"){
     
-    window.location.href='../home-page.html';
+    // window.location.href='../home-page.html';
+    window.location.assign('../home-page.html');
+
+
+
 }
 else{
     console.log('Number and PIN not matched')
